@@ -1,28 +1,28 @@
 class Openkai < Formula
   desc "Open agent harness + TUI — 30+ providers, durable memory, multi-model fusion"
   homepage "https://github.com/Kaidera-AI/OpenKai"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.007/openkai-darwin-arm64"
-      sha256 "16c1a479b9c0889ae8a4ace001e76ea2a493d356c013f88a479b31c89c8d4e41"
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.008/openkai-darwin-arm64"
+      sha256 "b6573045fed3d5e0b47544bc3c7536719fa0755049165b092ad6483f004675dc"
     end
     on_intel do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.007/openkai-darwin-x64"
-      sha256 "3696cb5ac6cf282dd82ce4b2f37005908fbd2f1edf1e00fa35c6da633c32cf97"
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.008/openkai-darwin-x64"
+      sha256 "7a2a0eba6c80ee4e62c2ef9a0eb5930524ec0bdc6e06c6f9f4c8a27582060b07"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.007/openkai-linux-arm64"
-      sha256 "df3c3eebfbaf1508582f5b5bae08b21116e6362d1ce4dffd48e39870d1340a75"
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.008/openkai-linux-arm64"
+      sha256 "c7161aeb136c42fdc935c2562b99f2aca571abb74ebe1996388a8a9750facb26"
     end
     on_intel do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.007/openkai-linux-x64"
-      sha256 "60fb27e366b39c8699c711d26e94eb7112a0c5955d1daf09ecfa9a8196fab39f"
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.008/openkai-linux-x64"
+      sha256 "072166988ce103519154ed303b8ed62e9492a4bdc010ec0250461bc6e6e667aa"
     end
   end
 
