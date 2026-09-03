@@ -1,37 +1,37 @@
 class Openkai < Formula
   desc "Open agent harness + TUI — 30+ providers, durable memory, multi-model fusion"
   homepage "https://github.com/Kaidera-AI/OpenKai"
-  version "0.1.10"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.010/omp-darwin-arm64",
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.12/openkai-darwin-arm64",
           using: :nounzip
-      sha256 "fef7e42c759aacc6775b16de01fac992cff401215cca4fbcb4791e8c41556de3"
+      sha256 "2536d440edf66f8975530abf45c2af91ad5bd232af7820fc4c8efade6078763c"
     end
     on_intel do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.010/omp-darwin-x64",
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.12/openkai-darwin-x64",
           using: :nounzip
-      sha256 "26db432b4b1c390937d4da6d64c1876efcd0dd63702528b001e439ba048a40d5"
+      sha256 "741a899e07cf9907674c8e8379582cde7e542f662248bb633c8aed50c408428e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.010/omp-linux-arm64",
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.12/openkai-linux-arm64",
           using: :nounzip
-      sha256 "20cfb897e15e090cdb38084ce537b8cd9b5d643ca1115a8f6a35f73552212c8b"
+      sha256 "edd120510bf6026a4b368588df02712dd8e7c7a1c2cd2121152d3f087dab22a7"
     end
     on_intel do
-      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.010/omp-linux-x64",
+      url "https://github.com/Kaidera-AI/OpenKai/releases/download/v0.1.12/openkai-linux-x64",
           using: :nounzip
-      sha256 "7974f25fffd6e224f4a784a479282c3e7000f907741b8e21182528b72a277bd8"
+      sha256 "d890c16526ff67c4347192c20057b09ddb591be70405676458b8fbef86cfeeeb"
     end
   end
 
   def install
-    bin.install Dir["omp-*"].first => "openkai"
+    bin.install Dir["openkai-*"].first => "openkai"
   end
 
   test do
